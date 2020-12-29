@@ -22,4 +22,21 @@ def power(x):
     return x * x
 print(power(5))
 
+def enroll(name,gender):
+    print('name:',name)
+    print('gender:',gender)
+enroll('Sarah','F')
 
+def enroll(name,gender,age=6,city='Shanghai'):
+    print('name:',name)
+    print('gender:',gender)
+    print('age:',age)
+    print('city:',city)
+enroll('Sarah','F')
+
+def calc(*numbers):
+    sum = 0
+    for n in numbers:
+        sum = sum + n * n
+    return sum
+calc(1,2)
